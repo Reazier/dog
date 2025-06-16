@@ -44,6 +44,6 @@ class DatabaseHelper {
     ON DELETE CASCADE ON UPDATE CASCADE
     )''');
 
-    //git push test.
+    //github.com/jonataslaw/getx
   }
 }
