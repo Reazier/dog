@@ -31,12 +31,12 @@ class DatabaseHelper {
     await db.execute('PRAGMA foreign_keys = ON');
     await db.execute('''
     CREATE TABLE IF NOT EXISTS classes_info(
-    class_number INTEGET NOT NULL UNIQUE,
+    class_number INTEGER NOT NULL UNIQUE,
     class_name TEXT NOT NULL UNIQUE,
-    PRIMARY KEY(class_name AUTOINCREMENT)
+    PRIMARY KEY(class_number AUTOINCREMENT)
     );
     CREATE TABLE IF NOT EXISTS students_info(
-    student_id INTEGET NOT NULL UNIQUE,
+    student_id INTEGER NOT NULL UNIQUE,
     class_number INTEGET NOT NULL,
     student_name TEXT NOT NULL,
     PRIMARY KEY(student_id AUTOINCREMENT),
