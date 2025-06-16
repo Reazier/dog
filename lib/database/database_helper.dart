@@ -43,5 +43,7 @@ class DatabaseHelper {
     FOREIGN KEY(class_number) REFERENCES classes_info(class_number) 
     ON DELETE CASCADE ON UPDATE CASCADE
     )''');
+
+    //git push test.
   }
 }
