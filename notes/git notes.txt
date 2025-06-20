@@ -1,0 +1,10 @@
+定义此项目的user 信息
+
+git config user.name ""
+git config user.email ""
+
+添加仓库地址
+git remote add origin <url>
+
+重新设置仓库地址
+git remote set-url origin <url>

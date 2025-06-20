@@ -1,0 +1,17 @@
+如何编译64位app？
+
+配置Android项目
+	修改 android/app/build.gradle：
+	在 android → defaultConfig 中添加 ndk 配置，指定 ABI 为 64 位：
+	
+android{
+	defaultConfig{
+		ndk{
+			abiFilters += "arm64-v8a"		
+		}
+	}
+}
+
+编译64位APK
+
+flutter build apk --release --target-platform android-arm64
